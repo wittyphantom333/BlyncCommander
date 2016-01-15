@@ -1,0 +1,62 @@
+First start the BlyncCommandServer by double cliking the exe file BlyncCommandServer.exe, once it appears on the System tray, now open the command prompt.
+
+Navigate to the folder where BlyncCommander.exe is stored. Now type the following commands as explained below.
+
+If the device is a BlyncUSB30S Device:
+--------------------------------------
+
+blynccommander -light [colors] -flash [flash speed] -brightness [brightness values] -tone [tone names] -tonerepeat [tonereeat values] -volume [volume levels]
+
+Example:
+
+blynccommander -light red -flash high -brightness full -tone standard -tonerepeat true -volume 75
+
+
+
+If the device is a BlyncUSB30 Device:
+-------------------------------------
+
+blynccommander -light [colors] -flash [flash speed] -brightness [brightness values]
+
+Example:
+
+blynccommander -light red -flash high -brightness full
+
+
+
+If the device is a BlyncUSB10 or BlyncUSB20 Device:
+---------------------------------------------------
+
+blynccommander -light [colors] -flash [flash speed]
+
+Example:
+
+blynccommander -light red -flash high
+
+
+
+Possible values for options:
+----------------------------
+
+[colors]: red, green, yellow, purple, cyan, blue, white, orange, off
+
+[flash speed]: high, medium, low, off
+
+[brightness values]: full, dim
+
+[tone names]: standard, ringading, invader, crystal, millepede, azure, cogi, techzor, freedom, circuit, off
+
+[tonerepeat values]: true, false
+
+[volume levels]: 0, 25, 50, 75, 100
+
+
+-------------------------------------------
+
+If a wrong value is entered for any particular option then the message will be displayed on the command line to display the possible values for an option.
+
+If a wrong option (unsupported option) is entered for a particular device, message will be displayed to show that the current device doesn't 
+support this option.
+
+The above mentione "Usage" will be displayed on the command prompt also, if the command "blynccommander" (just applicaiton name with no options) is entered 
+on the commandline.
